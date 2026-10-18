@@ -1,0 +1,31 @@
+ASCIC — Gestão Integrada (protótipo)
+=====================================
+
+Conteúdo
+- index.html: interface móvel responsiva
+- assets/ascic-logo.png: imagem fornecida para a identidade visual
+
+Como abrir
+1. Extraia o ZIP em um computador.
+2. Abra index.html em um navegador moderno.
+3. No celular, o arquivo pode ser aberto em um navegador compatível, mas a experiência de GPS depende do navegador e de contexto seguro (HTTPS ou localhost).
+
+O que o protótipo demonstra
+- Cadastro local de clientes e imóveis
+- Cobranças e confirmação manual de pagamento
+- Registro demonstrativo de rondas das 00h às 06h
+- Captura de GPS mediante permissão do navegador
+- Campo para referência de QR Code
+- Histórico local e exportação JSON
+- Identidade visual ASCIC
+
+Limitações importantes
+- NÃO é um APK Android nativo e ainda não está publicado em loja.
+- NÃO tem servidor, banco de dados compartilhado, login real ou controle de permissões efetivo.
+- Os dados ficam apenas no armazenamento local do navegador e podem ser perdidos ao limpar os dados do navegador.
+- O QR Code digitado não é validado contra um cadastro de pontos; a passagem não é uma prova operacional autenticada.
+- Não envia e-mail/WhatsApp, não cobra automaticamente e não confirma Pix por integração bancária.
+- Não use com dados reais de clientes até implementar autenticação, backend seguro, backups, LGPD, validação das rondas e integração com provedor de pagamento/notificação.
+
+Próxima etapa para produção
+Construir backend/API e banco de dados, autenticação e perfis por função, gestão segura de clientes, integração Pix/webhooks, provedor de mensagens, leitura e validação real de QR Code, sincronização offline e testes em Android.
